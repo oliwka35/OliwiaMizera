@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+<body>
+  <canvas>
+  </canvas>
+  <header>
+    <div class="menu animated fadeInDown">
+    <ul>
+    <li><a class="disactive" href="portfolio.html">Portfolio</a></li>
+    <li><a class="disactive" href="about.html">About Me</a></li>
+    <li><a class="active" href="#">Contact</a></li>
+    </ul>
+  </div>
+</header>
+    <div class="wrapper animated bounceInLeft">
+      <div class="info">
+        <h3>Contact Info</h3>
+        <ul>
+          <li><i class="fa fa-phone"></i>  +48 733 381 818</li>
+          <li><i class="fa fa-envelope"></i>  oliwka.mizera@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h1>Contact Me!</h1>
+        <form>
+        <p>
+          <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+        </p>
+        <p>
+          <label>
+          <input type="email" name="email" placeholder="Your Email">
+          </label>
+        </p>
+        <p class="full">
+          <label>
+          <textarea name="message" rows="5" placeholder="Message"></textarea>
+        </label>
+        </p>
+        <p class="full">
+          <button type="button" name="button">Submit</button>
+        </p>
+      </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="canvas.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $('input, textarea').focus(function(){
+      $(this).css("background", "#D1E9E1");
+    });
+    $('input, textarea').blur(function(){
+      $(this).css('background', 'white');
+    });
+    </script>
+
+</body>
+</html>

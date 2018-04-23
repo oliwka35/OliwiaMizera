@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-image: url("desk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center center;
+}
+.name{
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.job{
+  font-size: 35px;
+}
+.menu {
+ 	visibility: hidden;
+	width: 100%;
+	text-align: center;
+  top: 45%;
+	position: absolute;
+  z-index: 3;
+  font-size: 35px;
+}
+.menu.active {
+	opacity: 1.0;
+	visibility: visible;
+}
+.menu ul:hover > li a {
+	opacity: 0.4;
+}
+.menu ul:hover > li a:hover {
+	opacity: 1.0;
+  font-size: 40px;
+}
+.menu ul, .menu a {
+	transition: opacity 0.3s ease-in-out;
+  transition: font-size 0.3s;
+}
+li{
+  display: inline;
+  padding: 3px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.header-content{
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  text-align: center;
+}
+
+.hide{
+opacity:0;
+visibility: hidden;}
+
+@media (max-width:800px) {
+  li{
+    display: block;
+  }
+}

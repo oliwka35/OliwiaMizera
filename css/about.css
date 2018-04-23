@@ -1,0 +1,125 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+body{
+  background-color: white;
+  color: '#1F305E';
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.4px;
+  width:100%;
+  overflow-x: hidden;
+}
+canvas{
+  height: 100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+.menu{
+  background-color: rgba(35,35,35, 0.9);
+  text-transform: uppercase;
+  padding: 20px;
+  width: 100%;
+}
+
+a, li{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin: 3px;
+}
+
+/* Menu Animation*/
+
+.active{
+font-size: 28px;
+opacity: 1;
+
+}
+
+.disactive{
+  font-size: 23px;
+  opacity: 0.7;
+}
+
+.menu ul:hover > li a {
+	opacity: 0.7;
+  font-size: 23px;
+}
+
+.menu ul:hover > li a:hover {
+	opacity: 1.0;
+  font-size: 28px;
+}
+
+.menu ul, .menu a {
+	transition: opacity 0.3s ease-in-out;
+  transition: font-size 0.3s;
+}
+
+.wrapper{
+  align-items: center;
+  margin: 60px auto 0;
+  width: 100%;
+  background-color: rgba(35,35,35, 0.9);
+}
+
+.photo{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.green{
+  color: #8CC9B6;
+}
+
+.about-me{
+  background-color: #EDEDED;
+  padding: 10px;
+}
+.skills{
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.icon{
+  height: 64px;
+  margin: 6px;
+}
+
+/*Large Screens */
+@media (min-width:850px) {
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 30px;
+  max-width: 1000px;
+  margin-top: 50px;
+}
+.wrapper >*{
+  padding: 2em;
+}
+}
+
+@media (min-width:600px) {
+
+.menu li{
+    display: inline;
+  }
+}
